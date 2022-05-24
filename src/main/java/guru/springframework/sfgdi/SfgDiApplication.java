@@ -15,9 +15,9 @@ public class SfgDiApplication {
 
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
 
-		MyController myControlller = (MyController) ctx.getBean("myController");
+		MyController myController = (MyController) ctx.getBean("myController");
 
-		String greeting = myControlller.sayHello();
+		String greeting = myController.sayHello();
 
 		System.out.println(greeting);
 
